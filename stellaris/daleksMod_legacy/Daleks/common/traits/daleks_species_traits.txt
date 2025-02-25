@@ -1,0 +1,56 @@
+daleks_trait_dalek_mutant = {
+	icon = "gfx/interface/icons/traits/daleks_trait_dalek_mutant.dds"
+	cost = 0
+	
+	randomized = no
+	modification = no
+
+	forced_happiness = yes	
+	immortal_leaders = yes
+	hide_age = yes
+	infertile = yes
+	
+	modifier = { 
+	
+		species_leader_exp_gain = -0.5
+		pop_government_ethic_attraction = 0.75
+		species_empire_size_mult = -0.25
+		planet_pops_consumer_goods_upkeep_mult = -1.0
+		
+	}
+	
+	ai_weight = { weight = 0 }
+	sorting_priority = 20
+	allowed_archetypes = { DALEK BIOLOGICAL }
+}
+
+daleks_trait_travel_machine = {
+	icon = "gfx/interface/icons/traits/daleks_trait_travel_machine.dds"
+	cost = 0
+	randomized = no
+	modification = no
+	modifier = {
+		army_damage_mult = 0.5
+		pop_environment_tolerance = 0.20
+		pop_housing_usage_mult = 0.1
+	}
+	ai_weight = { weight = 0 }
+	sorting_priority = 20
+	allowed_archetypes = { DALEK BIOLOGICAL }
+}
+
+daleks_trait_pathweb = {
+	icon = "gfx/interface/icons/traits/daleks_trait_pathweb.dds"
+	cost = 0
+	randomized = no
+	modification = no
+	modifier = {
+		planet_jobs_physics_research_produces_mult = 0.10
+		planet_jobs_society_research_produces_mult = 0.10
+		planet_jobs_engineering_research_produces_mult = 0.10
+		species_empire_size_mult = -0.25
+	}
+	ai_weight = { weight = 0 }
+	sorting_priority = 20
+	allowed_archetypes = { DALEK BIOLOGICAL }
+}
